@@ -3,13 +3,13 @@ def isPrime(integer):
     try:
         integer = eval(integer)
         if not isinstance(integer, int):
-            return - 1
+            return -1
         elif integer < 1:  # 质数定义：从1开始的自然数，仅能被1和自身除
             return False
         else:
             for i in range(2, integer):  # 当为1和2时，range生成空list，迭代被跳过
                 if integer % i == 0:
-                        return False
+                    return False
             else:
                 return True
     except:
