@@ -7,4 +7,3 @@ for i in range(10):
     for i in range(8):
         password += charList[random.randint(0, len(charList) - 1)]
     print(password)
-    
